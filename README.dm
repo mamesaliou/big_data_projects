@@ -14,45 +14,25 @@ Semaine 2 :
         5.6. Orchestrer - Ordre d’exécution du code de contrôle
         6. Conclusion
         7. Références
-    Jour 11/01 : 25 conseils SQL pour améliorer vos compétences en ingénierie des données
-        1. Introduction
-        2. Setup
-        3. Conseils SQL
-        4. Fonctions pratiques pour les scénarios courants de traitement des données
-        4.1. Besoin de filtrer sur la fonction WINDOW sans CTE/Sous-requête utiliser QUALIFIER
-        4.2. Besoin de la première/dernière ligne d’une partition, utilisez DISTINCT ON
-        4.3. Les types de données STRUCT sont triés en fonction de leurs clés, de gauche à droite.
-        4.4. Obtenir le premier/dernier élément avec ROW_NUMBER() + QUALIFIER
-        4.5. Vérifiez si au moins une ou toutes les valeurs booléennes sont vraies avec respectivement BOOL_OR et BOOL_AND
-        4.6. Si vous souhaitez sélectionner toutes les colonnes sauf quelques-unes, utilisez EXCLUDE
-        4.7. Fatigué de créer une longue liste de colonnes à partir de GROUP BY, utilisez GROUP BY ALL
-        4.8. Besoin de compter uniquement les lignes répondant à une condition spécifique ? Utiliser COUNT_IF
-        4.9. Besoin de concaténer des rangées de chaîne après GROUP BY ? Utilisation STRING_AGG
-        4.10. Gérer les valeurs de colonne Null avec d’autres colonnes ou les valeurs de secours à l’aide de COALESCE
-        4.11. Générer une plage de lignes de nombre/date avec GENERATE_SERIES
-        4.12. Convertir ARRAY/LIST d’éléments en lignes individuelles avec UNNEST
-        5. Obtenir des lignes dans une table en fonction de leur présence/absence dans une autre avec des opérations SET
-        5.1. Obtenir des données d’une table en fonction de l’existence de données dans une autre avec EXISTS
-        5.2. Récupérer les données présentes dans les deux tables avec INTERSECT
-        5.3. Obtenir les données présentes dans le tableau 1 mais pas dans le tableau 2 avec EXCEPT
-        5.4. Obtenir le diff de données (alias delta), avec (A - B) U (B - A)
-        6. Créer des fonctions réutilisables en SQL
-        6.1. Les fonctions en SQL sont appelées MACROs
-        7. Générer dynamiquement du SQL avec Python
-        7.1. Utiliser Jinja2 pour créer des requêtes SQL en Python
-        8. Accédez aux données relatives à vos données (métadonnées)
-        8.1. Les bases de données stockent les métadonnées dans information_schema
-        9. Évitez les doublons de données avec UPSERTS (alias MERGE INTO)
-        9.1. Insérer de nouvelles données, Mettre à jour les données existantes dans une table avec UPSERT/MERGE INTO
-        10. Types de jointure avancés
-        10.1. Récupérez la valeur de la table1 qui est la plus proche (dans le temps) de la ligne de la table2 avec ASOF JOIN
-        10.2. Récupérer les lignes de la table1 qui ne sont pas dans la table2 avec ANTI JOIN
-        10.3. Pour chaque ligne de la table 1, joignez toutes les lignes « correspondantes » de la table 2 avec LATERAL JOIN
-        11. Cas d’utilisation commerciale
-        11.1. Changer les valeurs de dimension en colonnes individuelles avec PIVOT
-        11.2. Générer des métriques pour chaque combinaison possible de dimensions avec CUBE
-        12. Conclusion
-        13. Continuer la lecture
+    Jour 11/01 : L’essentiel de SQL pour les ingénieurs de données
+        1. Présentation
+        2. SQL compétences
+        2.1. Modélisation des données
+        2.1.1. Exigences en matière de collecte
+        2.1.2. L’exploration
+        2.1.3. Modélisation
+        2.1.4. Stockage des données
+        2.2. Transformation des données
+        2.2.1. Types de transformation
+        2.2.1.1. Transformations étroites
+        2.2.1.2. Transformations larges
+        2.2.2. Planificateur de requêtes
+        2.2.3. Sécurité et autorisations
+        2.3. Pipeline de données
+        2.4. Analyse des données
+        3. Pratiquez
+        4. En conclusion
+        5. Lectures complémentaires
 Semaine 3 :
     Jour 13/01 : Comment construire un projet d’ingénierie des données étape par étape
         1. Présentation
